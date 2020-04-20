@@ -1,0 +1,29 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+        
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.6.1'
+        
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()
+        jcenter() // yh no we gotta keep it, u knwo wen we did that thing where we added google ads, do we need to add jcenter t o the dunn but it seems to want it here, yehwateevra warks yep
+        
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
